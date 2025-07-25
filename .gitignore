@@ -1,0 +1,19 @@
+# Byggfiler / tillfälliga filer
+style.css
+*.log
+
+# NPM / Node
+node_modules/
+package-lock.json
+package.json
+postcss.config.js
+# Mac-specifika skräpfiler
+.DS_Store
+
+# Tailwind
+.postcssrc
+tailwind.config.js
+
+# Övrigt
+gpt/
+fonts/inter-v19-latin
