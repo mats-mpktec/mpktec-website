@@ -991,6 +991,10 @@ video {
   max-height: 400px;
 }
 
+.min-h-\[100px\] {
+  min-height: 100px;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1195,6 +1199,10 @@ video {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-3 {
