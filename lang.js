@@ -14,6 +14,7 @@ const translations = {
     hero_button: "Utforska våra projekt",
 
     about_title: "Om MPK Tec AB",
+    about_us: "Om oss",
     about_paragraph1: "MPK Tec AB är ett svenskt teknikföretag dedikerat till att utveckla användarvänliga och effektiva mjukvarulösningar. Vi strävar efter att förenkla digitala processer för både privatpersoner och företag.",
     about_paragraph2: "Vår filosofi bygger på innovation, säkerhet och en stark kundfokus. Vi är stolta över att skapa produkter som gör verklig skillnad i våra användares liv.",
     about_paragraph3: "Vi prioriterar lösningar som körs lokalt på din enhet när det inte tillför ett tydligt mervärde att använda molntjänster. Detta för att säkerställa hög driftsäkerhet, minska kostnader och värna om din personliga integritet.",
@@ -68,6 +69,7 @@ const translations = {
     hero_button: "Explore our projects",
 
     about_title: "About MPK Tec AB",
+    about_us: "About us",
     about_paragraph1: "MPK Tec AB is a Swedish technology company dedicated to developing user-friendly and efficient software solutions. We aim to simplify digital processes for both individuals and businesses.",
     about_paragraph2: "Our philosophy is based on innovation, security, and a strong customer focus. We are proud to create products that make a real difference in our users’ lives.",
     about_paragraph3: "We prioritize solutions that run locally on your device when there is no clear benefit in using cloud services. This ensures high reliability, lowers costs, and protects your privacy.",
