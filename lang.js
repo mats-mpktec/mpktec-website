@@ -27,8 +27,8 @@ const translations = {
     product2_title: "Koordinatomvandlare",
     product2_desc: "En praktisk app för att enkelt konvertera koordinater mellan olika format. Perfekt för geocaching, navigering eller fältarbete. Kommer snart!",
 
-    product3_title: "Körjournal App (för föreningar)",
-    product3_desc: "Effektivisera er fordonsadministration med vår körjournalapp, anpassad för föreningars behov. Enkel loggning och rapportering. Kommer snart!",
+    product3_title: "Körjournal App",
+    product3_desc: "Effektivisera er fordonsadministration med vår körjournalapp, anpassad för föreningars och mindre företags behov. Enkel loggning och rapportering. Kommer snart!",
 
     contact_title: "Kontakta oss",
     contact_intro: "Har du frågor, feedback eller vill veta mer om våra tjänster? Tveka inte att höra av dig!",
@@ -88,8 +88,8 @@ const translations = {
     product2_title: "Coordinate Converter",
     product2_desc: "A handy app to easily convert coordinates between different formats. Perfect for geocaching, navigation, or fieldwork. Coming soon!",
 
-    product3_title: "Mileage Log App (for associations)",
-    product3_desc: "Streamline your vehicle administration with our mileage log app, tailored for associations. Simple logging and reporting. Coming soon!",
+    product3_title: "Mileage Log App",
+    product3_desc: "Streamline your vehicle administration with our mileage log app, tailored for associations and smaller companies. Simple logging and reporting. Coming soon!",
 
     contact_title: "Contact Us",
     contact_intro: "Do you have questions, feedback, or want to know more about our services? Don’t hesitate to reach out!",

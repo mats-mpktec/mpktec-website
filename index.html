@@ -14,7 +14,7 @@
     <!-- Open Graph standard -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="" data-i18n-meta="meta_title">
-    <meta property="og:description" content="" data-i18n-meta="meta_description">
+    <meta property="og:description" content="MPK Tec AB utvecklar effektiva och användarvänliga appar för både privatpersoner och företag." data-i18n-meta="meta_description">
     <meta property="og:image" content="https://mats-mpktec.github.io/mpktec-website/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -22,32 +22,8 @@
     <!-- Tailwind CSS CDN för enkel styling -->
    <link href="output.css" rel="stylesheet">
     
-    <style>
-        /* Anpassad CSS för Inter-fonten */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Enkel scroll-smoothness */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Modal CSS */
-        .modal {
-          position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%;
-          overflow: auto; background-color: rgba(0,0,0,0.5);
-        }
-        .modal-content {
-          background-color: #fff; margin: 10% auto; padding: 20px; border-radius: 4px;
-          width: 90%; max-width: 600px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        .close {
-          color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;
-        }
-        .close:hover { color: black; }
-    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
-
     <!-- Header Sektion -->
     <header class="bg-white shadow-sm py-4">
         <nav class="container mx-auto px-4 flex justify-between items-center">
@@ -124,7 +100,7 @@
                 <!-- Produkt 1: Simple PDF Scanner -->
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex justify-center mb-6">
-                        <img src="https://placehold.co/120x120/A7D9F0/000?text=PDF+Scan" alt="Simple PDF Scanner ikon" class="rounded-full border-4 border-blue-200">
+                        <img src="./images/sps.png" alt="Simple PDF Scanner ikon" class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
                     </div>
                     <h3 data-i18n="product1_title" class="text-2xl font-semibold text-gray-900 mb-4 text-center"></h3>
                     <p data-i18n="product1_desc" class="text-gray-700 text-center mb-6"></p>
@@ -135,23 +111,23 @@
                 <!-- Produkt 2: Koordinatomvandlare -->
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex justify-center mb-6">
-                        <img src="https://placehold.co/120x120/D1E7DD/000?text=Koordinat" alt="Koordinatomvandlare ikon" class="rounded-full border-4 border-green-200">
+                        <img src="./images/ct.png" alt="Koordinatomvandlare ikon" class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
                     </div>
                     <h3 data-i18n="product2_title" class="text-2xl font-semibold text-gray-900 mb-4 text-center"></h3>
                     <p data-i18n="product2_desc" class="text-gray-700 text-center mb-6"></p>
                     <div class="text-center">
-                        <a href="#contact" data-i18n="button_contact" class="inline-block bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-green-700 transition duration-300 shadow-md"></a>
+                        <a href="#contact" data-i18n="button_contact" class="inline-block bg-yellow-600 text-white font-bold py-2 px-6 rounded-full hover:bg-yellow-700 transition duration-300 shadow-md"></a>
                     </div>
                 </div>
                 <!-- Produkt 3: Körjournal App (för föreningar) -->
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex justify-center mb-6">
-                        <img src="https://placehold.co/120x120/FEEBCB/000?text=Körjournal" alt="Körjournal App ikon" class="rounded-full border-4 border-yellow-200">
+                        <img src="./images/kj.png" alt="Körjournal App ikon" class="rounded-full border-4 border-green-200 h-24 w-24 object-contain">
                     </div>
                     <h3 data-i18n="product3_title" class="text-2xl font-semibold text-gray-900 mb-4 text-center"></h3>
                     <p data-i18n="product3_desc" class="text-gray-700 text-center mb-6"></p>
                     <div class="text-center">
-                        <a href="#contact" data-i18n="button_contact" class="inline-block bg-yellow-600 text-white font-bold py-2 px-6 rounded-full hover:bg-yellow-700 transition duration-300 shadow-md"></a>
+                        <a href="#contact" data-i18n="button_contact" class="inline-block bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-yellow-700 transition duration-300 shadow-md"></a>
                     </div>
                 </div>
             </div>
@@ -202,10 +178,10 @@
     <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg shadow-xl">
         <div class="container mx-auto px-4">
             <p data-i18n="footer_rights" class="mb-4"></p>
-            <div class="flex justify-center space-x-6">
-                <a href="#" onclick="showPolicyModal()"><span data-i18n="footer_privacy">Integritetspolicy</span></a> | 
-                <a href="#" onclick="showTermsModal()"><span data-i18n="footer_terms">Användarvillkor</span></a>
+                <a href="#" onclick="openModal('policyModal')"><span data-i18n="footer_privacy">Integritetspolicy</span></a> |
+                <a href="#" onclick="openModal('termsModal')"><span data-i18n="footer_terms">Användarvillkor</span></a>
             </div>
+
         </div>
     </footer>
 
@@ -331,42 +307,108 @@
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "09253feda793486ca57bc1babe4cde33"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
-</html>
-    <!-- Integritetspolicy & Användarvillkor Modaler -->
-    <div id="policyModal" class="modal" style="display:none;">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('policyModal')">&times;</span>
-        <h2 data-i18n="privacy_title">Integritetspolicy</h2>
-        <p data-i18n="privacy_content">Denna integritetspolicy förklarar hur vi hanterar dina personuppgifter...</p>
+
+<!-- Privacy Policy Modal -->
+<div id="policyModal" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+
+      <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+        <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start">
+            <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+              <!-- Ikon för Integritetspolicy -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-6 w-6 text-red-600">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+              </svg>
+            </div>
+            <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+              <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title" data-i18n="privacy_title"></h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-500" data-i18n="privacy_content"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto" onclick="closeModal('policyModal')">Stäng</button>
+        </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div id="termsModal" class="modal" style="display:none;">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('termsModal')">&times;</span>
-        <h2 data-i18n="terms_title">Användarvillkor</h2>
-        <p data-i18n="terms_content">Genom att använda denna webbplats godkänner du följande villkor...</p>
+<!-- Terms of Use Modal -->
+<div id="termsModal" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+
+      <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+        <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start">
+            <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+              <!-- Ikon för Användarvillkor -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-6 w-6 text-green-600">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </div>
+            <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+              <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title" data-i18n="terms_title"></h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-500" data-i18n="terms_content"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 sm:ml-3 sm:w-auto" onclick="closeModal('termsModal')">Stäng</button>
+        </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <script>
-      function showPolicyModal() {
-        document.getElementById('policyModal').style.display = 'block';
-      }
-      function showTermsModal() {
-        document.getElementById('termsModal').style.display = 'block';
-      }
-      function closeModal(id) {
-        document.getElementById(id).style.display = 'none';
+
+
+<script>
+      // --- Modal Logic ---
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove('hidden');
+        }
       }
 
-      // Stäng modal vid klick utanför
-      window.onclick = function(event) {
-        ['policyModal', 'termsModal'].forEach(id => {
-          const modal = document.getElementById(id);
-          if (event.target === modal) {
-            modal.style.display = 'none';
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add('hidden');
+        }
+      }
+
+      // Stäng modal vid klick på bakgrunden (utanför innehållet)
+      window.addEventListener('click', function(event) {
+        const openModal = document.querySelector('.relative.z-10[role="dialog"]:not(.hidden)');
+
+        if (openModal) {
+          const contentPanel = openModal.querySelector('.relative.transform');
+          const isClickInsideContent = contentPanel && contentPanel.contains(event.target);
+          const isClickOnOpenLink = event.target.closest(`a[onclick*="openModal('${openModal.id}')"]`);
+
+          if (!isClickInsideContent && !isClickOnOpenLink) {
+            closeModal(openModal.id);
           }
-        });
-      };
+        }
+      });
     </script>
+</html>
