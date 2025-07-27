@@ -17,3 +17,8 @@ tailwind.config.js
 # Övrigt
 gpt/
 fonts/inter-v19-latin
+
+#images
+images/ct.png
+images/kj.png
+images/sps.png
