@@ -42,6 +42,12 @@ const translations = {
     contact_form_thankyou: "Tack för ditt meddelande! Vi återkommer så snart vi kan.",
     contact_form_error_generic: "Formuläret kunde inte skickas. Försök igen senare.", // Nyckel för generiskt fel
     contact_form_error_network: "Något gick fel med nätverksanslutningen. Kontrollera din internetanslutning och försök igen.", // Nyckel för nätverksfel
+    contact_name_label: "Ditt namn",
+    contact_name_placeholder: "Ditt namn",
+    contact_email_label: "Din e-post",
+    contact_email_placeholder: "din.epost@example.com",
+    contact_message_label: "Ditt meddelande",
+    contact_message_placeholder: "Skriv ditt meddelande här...",
 
     footer_rights: "&copy; 2025 MPK Tec AB. Alla rättigheter förbehålles.",
     footer_privacy: "Integritetspolicy",
@@ -97,6 +103,12 @@ const translations = {
     contact_form_thankyou: "Thank you for your message! We will get back to you as soon as possible.",
     contact_form_error_generic: "The form could not be submitted. Please try again later.", 
     contact_form_error_network: "Something went wrong with the network connection. Please check your internet connection and try again.", 
+    contact_name_label: "Your name",
+    contact_name_placeholder: "Your name",
+    contact_email_label: "Your email",
+    contact_email_placeholder: "your.email@example.com",
+    contact_message_label: "Your message",
+    contact_message_placeholder: "Write your message here...",
 
     footer_rights: "&copy; 2025 MPK Tec AB. All rights reserved.",
     footer_privacy: "Privacy Policy",

@@ -172,16 +172,22 @@
                 <form id="contact-form" action="https://getform.io/f/bdrgvzxb" method="POST" class="mt-10 space-y-6">
                   <input type="hidden" name="_gotcha" style="display:none !important">
                   <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700">Ditt namn</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Ditt namn">
+                    <label for="name" data-i18n="contact_name_label" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="text" id="name" name="name"
+                           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                           data-i18n-placeholder="contact_name_placeholder">
                   </div>
                   <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">Din e-post</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="din.epost@example.com">
+                    <label for="email" data-i18n="contact_email_label" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="email" id="email" name="email"
+                           class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                           data-i18n-placeholder="contact_email_placeholder">
                   </div>
                   <div>
-                    <label for="message" class="block text-sm font-medium text-gray-700">Ditt meddelande</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Skriv ditt meddelande här..."></textarea>
+                    <label for="message" data-i18n="contact_message_label" class="block text-sm font-medium text-gray-700"></label>
+                    <textarea id="message" name="message" rows="4"
+                              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                              data-i18n-placeholder="contact_message_placeholder"></textarea>
                   </div>
                   <button type="submit" data-i18n="contact_form_button" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-md shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"></button>
                   <p id="form-success" class="hidden text-green-600 mt-4 text-sm"></p>
@@ -245,6 +251,13 @@
             el.innerHTML = translations[lang][key];
           }
         });
+         // Placeholder-texter
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (translations[lang] && translations[lang][key]) {
+      el.setAttribute("placeholder", translations[lang][key]);
+    }
+  });
         // Uppdatera meta-taggar för initialt språk
         updateMetaTags(lang);
         
@@ -258,6 +271,13 @@
                 el.innerHTML = translations[selected][key];
               }
             });
+            // Placeholder-texter vid språkbyte
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (translations[selected] && translations[selected][key]) {
+          el.setAttribute("placeholder", translations[selected][key]);
+        }
+      });
             // Uppdatera meta-taggar vid språkbyte
             updateMetaTags(selected);
           });
