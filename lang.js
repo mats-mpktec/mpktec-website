@@ -20,6 +20,10 @@ const translations = {
     about_paragraph3: "Vi prioriterar lösningar som körs lokalt på din enhet när det inte tillför ett tydligt mervärde att använda molntjänster. Detta för att säkerställa hög driftsäkerhet, minska kostnader och värna om din personliga integritet.",
 
     products_title: "Våra Produkter",
+    coming_soon_badge: "Kommer snart",
+
+    product4_title: "Pilotkonverterare",
+    product4_desc: "Din digitala flygdator i fickan. Utför snabbt alla vanliga flygberäkningar, från bränsle och stigning till tid och distans. Innehåller en unik funktion för att skapa och skriva ut anpassade, vikbara kartlinjaler direkt från din telefon.",
 
     product1_title: "Simple PDF Scanner",
     product1_desc: "Den ultimata appen för att snabbt och säkert skanna dokument till PDF. Med funktioner som OCR, lösenordsskydd och enkel delning. Kommer snart!",
@@ -81,6 +85,10 @@ const translations = {
     about_paragraph3: "We prioritize solutions that run locally on your device when there is no clear benefit in using cloud services. This ensures high reliability, lowers costs, and protects your privacy.",
 
     products_title: "Our Products",
+    coming_soon_badge: "Coming Soon",
+
+    product4_title: "Pilot Converter",
+    product4_desc: "Your digital flight computer in your pocket. Quickly perform all common flight calculations, from fuel and climb to time and distance. Includes a unique feature to create and print custom, foldable map rulers directly from your phone.",
 
     product1_title: "Simple PDF Scanner",
     product1_desc: "The ultimate app for quickly and securely scanning documents to PDF. Includes OCR, password protection, and easy sharing. Coming soon!",

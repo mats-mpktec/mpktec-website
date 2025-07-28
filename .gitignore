@@ -1,19 +1,10 @@
-# Byggfiler / tillfälliga filer
-style.css
-*.log
-
-# NPM / Node
+# NPM / Node dependencies
+# Dessa installeras via `npm install` och ska inte finnas i repot.
 node_modules/
-package-lock.json
-package.json
-postcss.config.js
+
 # Mac-specifika skräpfiler
 .DS_Store
 
-# Tailwind
-.postcssrc
-tailwind.config.js
-
 # Övrigt
 gpt/
-fonts/inter-v19-latin
+*.log
