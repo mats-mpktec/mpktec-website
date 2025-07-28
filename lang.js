@@ -23,7 +23,7 @@ const translations = {
     coming_soon_badge: "Kommer snart",
 
     product4_title: "Pilotkonverterare",
-    product4_desc: "Din digitala flygdator i fickan. Utför snabbt alla vanliga flygberäkningar, från bränsle och stigning till tid och distans. Innehåller en unik funktion för att skapa och skriva ut anpassade, vikbara kartlinjaler direkt från din telefon.",
+    product4_desc: "Din digitala flygdator i fickan. Utför snabbt alla vanliga flygberäkningar, från bränsle och stigning till tid och distans. Innehåller en unik funktion för att skapa och skriva ut anpassade, vikbara kartlinjaler direkt från din telefon. Kommer snart!",
 
     product1_title: "Simple PDF Scanner",
     product1_desc: "Den ultimata appen för att snabbt och säkert skanna dokument till PDF. Med funktioner som OCR, lösenordsskydd och enkel delning. Kommer snart!",
@@ -88,7 +88,7 @@ const translations = {
     coming_soon_badge: "Coming Soon",
 
     product4_title: "Pilot Converter",
-    product4_desc: "Your digital flight computer in your pocket. Quickly perform all common flight calculations, from fuel and climb to time and distance. Includes a unique feature to create and print custom, foldable map rulers directly from your phone.",
+    product4_desc: "Your digital flight computer in your pocket. Quickly perform all common flight calculations, from fuel and climb to time and distance. Includes a unique feature to create and print custom, foldable map rulers directly from your phone. Coming soon!",
 
     product1_title: "Simple PDF Scanner",
     product1_desc: "The ultimate app for quickly and securely scanning documents to PDF. Includes OCR, password protection, and easy sharing. Coming soon!",
