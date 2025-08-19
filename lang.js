@@ -26,7 +26,8 @@ const translations = {
     product4_desc: "Din digitala flygdator i fickan. Utför snabbt alla vanliga flygberäkningar, från bränsle och stigning till tid och distans. Innehåller en unik funktion för att skapa och skriva ut anpassade, vikbara kartlinjaler direkt från din telefon. Kommer snart!",
 
     product1_title: "Simple PDF Scanner",
-    product1_desc: "Den ultimata appen för att snabbt och säkert skanna dokument till PDF. Med funktioner som OCR, lösenordsskydd och enkel delning. Kommer snart!",
+    product1_desc: "Den ultimata appen för att snabbt och säkert skanna dokument till PDF. Med funktioner som OCR, lösenordsskydd och enkel delning.",
+    product1_button: "Ladda ner på App Store",
 
     product2_title: "Koordinatomvandlare",
     product2_desc: "En praktisk app för att enkelt konvertera koordinater mellan olika format. Perfekt för geocaching, navigering eller fältarbete. Kommer snart!",
@@ -57,6 +58,7 @@ const translations = {
     footer_privacy: "Integritetspolicy",
     footer_terms: "Användarvillkor",
     button_contact: "Kontakta oss",
+    modal_close_button: "Stäng",
     privacy_title: "Integritetspolicy",
     privacy_content: "MPK Tec AB värnar om din integritet. Denna webbplats använder inga cookies och samlar inte in några personuppgifter. Om du kontaktar oss via formulär behandlas din e-postadress endast i syfte att besvara ditt meddelande. Vi delar aldrig information med tredje part. Våra appar är utformade för att fungera lokalt på din enhet och kräver ingen inloggning eller molntjänst, om inte detta tydligt anges.",
 
@@ -91,7 +93,8 @@ const translations = {
     product4_desc: "Your digital flight computer in your pocket. Quickly perform all common flight calculations, from fuel and climb to time and distance. Includes a unique feature to create and print custom, foldable map rulers directly from your phone. Coming soon!",
 
     product1_title: "Simple PDF Scanner",
-    product1_desc: "The ultimate app for quickly and securely scanning documents to PDF. Includes OCR, password protection, and easy sharing. Coming soon!",
+    product1_desc: "The ultimate app for quickly and securely scanning documents to PDF. Includes OCR, password protection, and easy sharing.",
+    product1_button: "Download on the App Store",
 
     product2_title: "Coordinate Converter",
     product2_desc: "A handy app to easily convert coordinates between different formats. Perfect for geocaching, navigation, or fieldwork. Coming soon!",
@@ -122,6 +125,7 @@ const translations = {
     footer_privacy: "Privacy Policy",
     footer_terms: "Terms of Use",
     button_contact: "Contact us",
+    modal_close_button: "Close",
     privacy_title: "Privacy Policy",
     privacy_content: "MPK Tec AB respects your privacy. This website does not use cookies and does not collect any personal data. If you contact us via the form, your email address will be used only to respond to your message. We never share information with third parties. Our apps are designed to run locally on your device and do not require login or cloud services unless explicitly stated.",
 
