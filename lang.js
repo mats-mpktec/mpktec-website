@@ -28,6 +28,7 @@ const translations = {
     product1_title: "Simple PDF Scanner",
     product1_desc: "Den ultimata appen för att snabbt och säkert skanna dokument till PDF. Med funktioner som OCR, lösenordsskydd och enkel delning.",
     product1_button: "Ladda ner på App Store",
+    product_learn_more: "Läs mer",
 
     product2_title: "Koordinatomvandlare",
     product2_desc: "En praktisk app för att enkelt konvertera koordinater mellan olika format. Perfekt för geocaching, navigering eller fältarbete. Kommer snart!",
@@ -95,6 +96,7 @@ const translations = {
     product1_title: "Simple PDF Scanner",
     product1_desc: "The ultimate app for quickly and securely scanning documents to PDF. Includes OCR, password protection, and easy sharing.",
     product1_button: "Download on the App Store",
+    product_learn_more: "Learn more",
 
     product2_title: "Coordinate Converter",
     product2_desc: "A handy app to easily convert coordinates between different formats. Perfect for geocaching, navigation, or fieldwork. Coming soon!",
