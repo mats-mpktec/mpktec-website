@@ -31,7 +31,8 @@ const translations = {
     product_learn_more: "Läs mer",
 
     product2_title: "Koordinatomvandlare",
-    product2_desc: "En praktisk app för att enkelt konvertera koordinater mellan olika format. Perfekt för geocaching, navigering eller fältarbete. Kommer snart!",
+    product2_desc: "En praktisk app för att enkelt konvertera koordinater mellan olika format. Perfekt för geocaching, navigering eller fältarbete.",
+    product2_button: "Ladda ner på App Store",
 
     product3_title: "Körjournal App",
     product3_desc: "Effektivisera er fordonsadministration med vår körjournalapp, anpassad för föreningars och mindre företags behov. Enkel loggning och rapportering. Kommer snart!",
@@ -99,7 +100,8 @@ const translations = {
     product_learn_more: "Learn more",
 
     product2_title: "Coordinate Converter",
-    product2_desc: "A handy app to easily convert coordinates between different formats. Perfect for geocaching, navigation, or fieldwork. Coming soon!",
+    product2_desc: "A handy app to easily convert coordinates between different formats. Perfect for geocaching, navigation, or fieldwork.",
+    product2_button: "Download on the App Store",
 
     product3_title: "Mileage Log App",
     product3_desc: "Streamline your vehicle administration with our mileage log app, tailored for associations and smaller companies. Simple logging and reporting. Coming soon!",
