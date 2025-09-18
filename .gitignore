@@ -8,3 +8,10 @@ node_modules/
 # Övrigt
 gpt/
 *.log
+
+# Backup/temporary HTML files
+index_backup*.html
+*backup*.html
+*original_backup*.html
+*.bak
+*~
