@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex, follow">
     <title>MPK Tec AB – Innovative Digital Solutions</title>
     <meta name="description" content="MPK Tec AB develops efficient and user-friendly mobile apps for both individuals and businesses. Swedish tech company creating smart, local, and secure apps.">
 
@@ -32,9 +33,13 @@
     <meta name="twitter:creator" content="@MPKTecAB">
 
     <!-- Canonical URL and language alternates -->
-    <link rel="canonical" href="https://mpktec.se/en/">
-    <link rel="alternate" hreflang="sv" href="https://mpktec.se/sv/" />
+    <link rel="canonical" href="https://mpktec.se/">
+    <link rel="alternate" hreflang="sv-SE" href="https://mpktec.se/sv/" />
     <link rel="alternate" hreflang="en" href="https://mpktec.se/en/" />
+    <link rel="alternate" hreflang="de-DE" href="https://mpktec.se/de/" />
+    <link rel="alternate" hreflang="fr-FR" href="https://mpktec.se/fr/" />
+    <link rel="alternate" hreflang="es-ES" href="https://mpktec.se/es/" />
+    <link rel="alternate" hreflang="sl-SI" href="https://mpktec.se/si/" />
     <link rel="alternate" hreflang="x-default" href="https://mpktec.se/en/" />
 
     <!-- Favicons -->
@@ -51,20 +56,26 @@
             const path = window.location.pathname.replace(/index\.html$/, '');
             const userLang = navigator.language || navigator.userLanguage;
 
+            let targetPath;
             if (userLang.startsWith('sv')) {
-                window.location.replace(path + 'sv/');
+                targetPath = path + 'sv/';
             } else if (userLang.startsWith('de')) {
-                window.location.replace(path + 'de/');
+                targetPath = path + 'de/';
             } else if (userLang.startsWith('fr')) {
-                window.location.replace(path + 'fr/');
+                targetPath = path + 'fr/';
             } else if (userLang.startsWith('es')) {
-                window.location.replace(path + 'es/');
+                targetPath = path + 'es/';
             } else if (userLang.startsWith('sl')) {
-                window.location.replace(path + 'si/');
+                targetPath = path + 'si/';
             } else {
                 // Default to English for all other languages
-                window.location.replace(path + 'en/');
+                targetPath = path + 'en/';
             }
+
+            // Delay redirect to allow social media crawlers to read metadata
+            setTimeout(function() {
+                window.location.replace(targetPath);
+            }, 300);
         })();
     </script>
     <!-- Fallback för besökare som har stängt av JavaScript -->
