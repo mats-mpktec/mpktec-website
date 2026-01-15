@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Converter – Digital Flight Computer for Modern Pilots</title>
+    <meta name="description" content="Pilot Converter is your digital aviation flight computer for planning, holding, wind triangle and fuel conversion. Fast, offline and privacy-first.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mpktec.se/en/pilotconverter/">
+    <meta property="og:title" content="Pilot Converter – Digital Flight Computer for Modern Pilots">
+    <meta property="og:description" content="Fast, accurate aviation calculations for modern pilots. Offline, no accounts, no tracking.">
+    <meta property="og:image" content="https://mpktec.se/images/pc.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mpktec.se/en/pilotconverter/">
+    <meta property="twitter:title" content="Pilot Converter – Digital Flight Computer for Modern Pilots">
+    <meta property="twitter:description" content="Fast, accurate aviation calculations for modern pilots. Offline, no accounts, no tracking.">
+    <meta property="twitter:image" content="https://mpktec.se/images/pc.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Pilot Converter" />
+    <link rel="manifest" href="../../site.webmanifest" />
+
+    <!-- Canonical and hreflang -->
+    <link rel="canonical" href="https://mpktec.se/en/pilotconverter/">
+    <link rel="alternate" hreflang="sv-SE" href="https://mpktec.se/sv/pilotconverter/">
+    <link rel="alternate" hreflang="en" href="https://mpktec.se/en/pilotconverter/">
+    <link rel="alternate" hreflang="de-DE" href="https://mpktec.se/de/pilotconverter/">
+    <link rel="alternate" hreflang="x-default" href="https://mpktec.se/en/pilotconverter/">
+
+    <!-- Tailwind CSS -->
+    <link href="../../output.css" rel="stylesheet">
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "09253feda793486ca57bc1babe4cde33"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Pilot Converter",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "description": "Digital flight computer for modern pilots with fast aviation calculations for fuel, time, distance and wind.",
+      "url": "https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se",
+      "installUrl": "https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se",
+      "downloadUrl": "https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "url": "https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se"
+      },
+      "publisher": { "@type": "Organization", "name": "MPK Tec AB", "url": "https://mpktec.se" }
+    }
+    </script>
+</head>
+<body class="antialiased text-gray-900 bg-white">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200">
+        <nav class="mx-auto max-w-6xl px-4 py-4">
+            <div class="md:grid md:grid-cols-[auto,1fr,auto] md:items-center md:gap-6 flex items-center justify-between">
+                <a href="/en/" class="flex items-center space-x-2">
+                    <img src="../../images/pc.jpg" alt="Pilot Converter" class="h-12 w-12 rounded-full border border-gray-200">
+                    <span class="text-xl font-bold">Pilot Converter</span>
+                </a>
+                <button id="mobile-menu-button" type="button" class="md:hidden text-gray-700 hover:text-blue-600" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <div class="hidden md:flex md:flex-wrap md:items-center md:justify-center md:gap-6 text-sm font-medium text-gray-700">
+                    <a href="#features" class="hover:text-blue-600 transition-colors">Flight Calculators</a>
+                    <a href="#tools" class="hover:text-blue-600 transition-colors">Unique Tools</a>
+                    <a href="#pricing" class="hover:text-blue-600 transition-colors">Pricing</a>
+                    <a href="#privacy" class="hover:text-blue-600 transition-colors">Privacy</a>
+                </div>
+                <a href="https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se" class="hidden md:inline-block whitespace-nowrap bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"><svg class="inline-block w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>Download</a>
+            </div>
+            <div id="mobile-menu" class="mt-4 hidden flex flex-col gap-4 text-sm font-medium text-gray-700 md:hidden">
+                <a href="#features" class="hover:text-blue-600 transition-colors">Flight Calculators</a>
+                <a href="#tools" class="hover:text-blue-600 transition-colors">Unique Tools</a>
+                <a href="#pricing" class="hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#privacy" class="hover:text-blue-600 transition-colors">Privacy</a>
+                <a href="https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se" class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"><svg class="inline-block w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gray-800 text-white">
+        <div class="mx-auto max-w-5xl px-4 py-20 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">Your digital flight computer in your pocket</h1>
+                    <p class="mt-4 text-lg leading-relaxed text-white opacity-90">Pilot Converter brings fast, accurate aviation calculations for planning, holding, wind triangle and fuel. Replace bulky computers and paper rulers with a clean, modern workflow.</p>
+                    <div class="mt-6 flex flex-col md:flex-row gap-4">
+                        <a href="https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se" class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"><svg class="inline-block w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>Download on the App Store</a>
+                        <span class="text-sm text-white opacity-90">7-day free trial • One-time purchase, no subscriptions</span>
+                    </div>
+                </div>
+                <div class="rounded-lg p-4 shadow-xl">
+                    <img src="../../images/coordtool/01t.png" alt="Pilot Converter app" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="bg-white py-20 md:py-24">
+        <div class="mx-auto max-w-5xl px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Built for modern pilots</h2>
+            <p class="mt-4 text-lg text-gray-700 leading-relaxed">Whether you are a student pilot, private pilot or professional aviator, Pilot Converter keeps essential calculations fast and reliable. Everything works offline, with no accounts and no tracking.</p>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section id="features" class="bg-gray-50 py-20 md:py-24">
+        <div class="mx-auto max-w-5xl px-4">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Flight calculators</h2>
+                <p class="mt-4 text-lg text-gray-700">Enter any two values and get the third instantly.</p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Fuel Converter</h3>
+                    <p class="mt-2 text-gray-700">Convert between liters, US gallons and fuel weight for Jet A-1 and 100LL.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Time & Distance</h3>
+                    <p class="mt-2 text-gray-700">Calculate ground speed, time or distance from two inputs.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Crosswind</h3>
+                    <p class="mt-2 text-gray-700">Instant headwind/tailwind and crosswind components with visual aid.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Climb Performance</h3>
+                    <p class="mt-2 text-gray-700">Convert climb gradient to ft/min based on ground speed.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Holding Entry</h3>
+                    <p class="mt-2 text-gray-700">Direct, parallel or teardrop with wind correction and diagram.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Wind Triangle</h3>
+                    <p class="mt-2 text-gray-700">Solve heading, ground speed and wind correction angle with a visual diagram.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Pressure & Density Altitude</h3>
+                    <p class="mt-2 text-gray-700">Calculate pressure altitude and density altitude from QNH and temperature.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Time Calculator</h3>
+                    <p class="mt-2 text-gray-700">Work with hh:mm time for add, subtract, multiply and divide.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Velocity & Distance</h3>
+                    <p class="mt-2 text-gray-700">Convert between knots, mph, km/h, m/s, feet and nautical miles.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Temperature</h3>
+                    <p class="mt-2 text-gray-700">Quick conversion between Celsius, Fahrenheit and Kelvin.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Time/Decimal Converter</h3>
+                    <p class="mt-2 text-gray-700">Switch between hh:mm and decimal time for logging and planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Tools -->
+    <section id="tools" class="bg-white py-20 md:py-24">
+        <div class="mx-auto max-w-5xl px-4">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Unique tools for pilots</h2>
+                <p class="mt-4 text-lg text-gray-700">Specialized tools that make chart work and planning easier.</p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Custom Map Rulers</h3>
+                    <p class="mt-2 text-gray-700">Create distance and time rulers for any chart scale, export as PDF.</p>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-xl font-semibold">Personal Rules & Notes</h3>
+                    <p class="mt-2 text-gray-700">Store your own rules of thumb, checklists and procedures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy" class="bg-gray-50 py-20 md:py-24">
+        <div class="mx-auto max-w-5xl px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Privacy & simplicity</h2>
+            <p class="mt-4 text-lg text-gray-700">Pilot Converter is built for focus and reliability, without distractions.</p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold">No ads</h3>
+                    <p class="mt-2 text-gray-700">Keep your attention where it belongs.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold">No tracking</h3>
+                    <p class="mt-2 text-gray-700">Your data stays on your device.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold">Offline first</h3>
+                    <p class="mt-2 text-gray-700">Works anywhere, even without internet.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold">No account needed</h3>
+                    <p class="mt-2 text-gray-700">Install and use instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="bg-white py-20 md:py-24">
+        <div class="mx-auto max-w-5xl px-4">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Try free, upgrade when you need it</h2>
+                <p class="mt-4 text-lg text-gray-700">7-day trial with full access. One-time purchase unlocks PRO forever.</p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold">Free Trial</h3>
+                    <p class="mt-2 text-gray-700">Try every feature with no limitations.</p>
+                    <p class="mt-6 text-4xl font-bold">7 days</p>
+                    <p class="mt-2 text-sm text-gray-500">No login required</p>
+                </div>
+                <div class="bg-blue-600 text-white rounded-lg p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold">PRO</h3>
+                    <p class="mt-2 text-white">One-time purchase with lifetime access.</p>
+                    <p class="mt-6 text-4xl font-bold">$3.99</p>
+                    <p class="mt-2 text-sm text-white">No subscriptions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="bg-gray-800 text-white py-20 md:py-24">
+        <div class="mx-auto max-w-5xl px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Ready to simplify flight planning?</h2>
+            <p class="mt-4 text-lg text-white opacity-90">Download Pilot Converter and bring a reliable digital flight computer to your iPhone.</p>
+            <div class="mt-6">
+                <a href="https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se" class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"><svg class="inline-block w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>Download on the App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="mx-auto max-w-5xl px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold">Pilot Converter</h3>
+                    <p class="mt-2 text-sm text-white opacity-90">Digital flight computer for modern pilots.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Links</h3>
+                    <div class="mt-2 flex flex-col gap-4 text-sm text-white opacity-90">
+                        <a href="/privacy/pilotconverter-en/" class="hover:underline">Privacy Policy</a>
+                        <a href="/en/" class="hover:underline">Back to MPK Tec</a>
+                        <a href="/sv/pilotconverter/" class="hover:underline">Svenska version</a>
+                        <a href="/de/pilotconverter/" class="hover:underline">Deutsch version</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 pt-4 text-xs text-white opacity-90">© 2026 MPK Tec AB</div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
+            });
+        }
+    </script>
+</body>
+</html>
