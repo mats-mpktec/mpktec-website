@@ -72,10 +72,18 @@
         <nav class="mx-auto max-w-6xl px-4 py-4">
             <div class="md:grid md:grid-cols-[auto,1fr,auto] md:items-center md:gap-6 flex items-center justify-between">
                 <a href="/de/" class="flex items-center space-x-2">
-                    <img src="../../images/pc.jpg" alt="Pilot Converter" class="h-12 w-12 rounded-full border border-gray-200">
+                    <img
+                    src="../../images/pc-48.webp"
+                    srcset="../../images/pc-48.webp 48w, ../../images/pc-96.webp 96w"
+                    sizes="48px"
+                    width="48"
+                    height="48"
+                    decoding="async"
+                    alt="Pilot Converter"
+                    class="h-12 w-12 rounded-full border border-gray-200">
                     <span class="text-xl font-bold">Pilot Converter</span>
                 </a>
-                <button id="mobile-menu-button" type="button" class="md:hidden text-gray-700 hover:text-blue-600" aria-controls="mobile-menu" aria-expanded="false">
+                <button id="mobile-menu-button" type="button" class="md:hidden text-gray-700 hover:text-blue-600" aria-label="Menü öffnen" aria-controls="mobile-menu" aria-expanded="false">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -98,6 +106,7 @@
         </nav>
     </header>
 
+    <main>
     <!-- Hero -->
     <section class="bg-gray-800 text-white">
         <div class="mx-auto max-w-5xl px-4 py-20 md:py-24">
@@ -111,7 +120,16 @@
                     </div>
                 </div>
                 <div class="rounded-lg p-4 shadow-xl">
-                    <img src="../../images/coordtool/01t.png" alt="Pilot Converter app" class="rounded-lg shadow-md">
+                    <img
+                        src="../../images/coordtool/01t-768.webp"
+                        srcset="../../images/coordtool/01t-480.webp 480w, ../../images/coordtool/01t-768.webp 768w, ../../images/coordtool/01t-1024.webp 1024w"
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        width="768"
+                        height="1665"
+                        fetchpriority="high"
+                        decoding="async"
+                        alt="Pilot Converter app"
+                        class="rounded-lg shadow-md">
                 </div>
             </div>
         </div>
@@ -265,6 +283,7 @@
     </section>
 
     <!-- Footer -->
+    </main>
     <footer class="bg-gray-800 text-white">
         <div class="mx-auto max-w-5xl px-4 py-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">

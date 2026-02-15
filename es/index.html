@@ -156,7 +156,15 @@
     <header class="bg-white shadow-sm py-4">
         <nav class="container mx-auto px-4 flex justify-between items-center">
             <!-- Logo/Nombre de la empresa -->
-            <img src="../images/full_transparent.PNG" alt="MPK Tec AB Logo" class="h-24">
+            <img
+                src="../images/full_transparent-240.webp"
+                srcset="../images/full_transparent-240.webp 240w, ../images/full_transparent-480.webp 480w"
+                sizes="(min-width: 768px) 233px, 180px"
+                width="233"
+                height="96"
+                decoding="async"
+                alt="MPK Tec AB Logo"
+                class="h-24">
             <!-- Navegación para escritorio -->
             <div class="hidden md:flex space-x-6">
                 <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium rounded-md px-3 py-2 transition-colors">Inicio</a>
@@ -167,7 +175,7 @@
             <!-- Selector de idioma -->
             <div class="relative">
                 <button id="language-selector" class="flex items-center px-3 py-2 rounded-md hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <img src="../images/flag-spain.png" alt="Español" class="w-7 h-5 mr-3" >
+                    <img src="../images/flag-spain.png" alt="Español" width="80" height="50" class="w-7 h-auto mr-3" >
                     <span class="text-sm font-medium text-gray-700 mr-3">ES</span>
                     <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -176,36 +184,36 @@
                 <div id="language-dropdown" class="hidden absolute right-0 mt-2 bg-white rounded-md shadow-lg border border-gray-200 z-50" style="width: 9rem;">
                     <div class="py-2">
                         <a href="../sv/" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
-                            <img src="../images/flag-sweden.png" alt="Svenska" class="w-6 h-4 mr-3" >
+                            <img src="../images/flag-sweden.png" alt="Svenska" width="80" height="50" class="w-6 h-auto mr-3" >
                             <span class="flex-1">Svenska</span>
                         </a>
                         <a href="../en/" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
-                            <img src="../images/flag-uk.png" alt="English" class="w-6 h-4 mr-3" >
+                            <img src="../images/flag-uk.png" alt="English" width="80" height="50" class="w-6 h-auto mr-3" >
                             <span class="flex-1">English</span>
                         </a>
                         <div class="border-t border-gray-100 my-1"></div>
                         <a href="../de/" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
-                            <img src="../images/flag-germany.png" alt="Deutsch" class="w-6 h-4 mr-3" >
+                            <img src="../images/flag-germany.png" alt="Deutsch" width="80" height="50" class="w-6 h-auto mr-3" >
                             <span class="flex-1">Deutsch</span>
                         </a>
                         <a href="../fr/" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
-                            <img src="../images/flag-france.png" alt="Français" class="w-6 h-4 mr-3" >
+                            <img src="../images/flag-france.png" alt="Français" width="80" height="50" class="w-6 h-auto mr-3" >
                             <span class="flex-1">Français</span>
                         </a>
                         <a href="../es/" class="flex items-center px-4 py-3 text-sm text-gray-900 bg-blue-50 font-medium" style="padding-right: 0.25rem;">
-                            <img src="../images/flag-spain.png" alt="Español" class="w-6 h-4 mr-3" >
+                            <img src="../images/flag-spain.png" alt="Español" width="80" height="50" class="w-6 h-auto mr-3" >
                             <span class="flex-1">Español</span>
                             <span class="text-blue-600 ml-2">✓</span>
                         </a>
                         <a href="../si/" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
-                            <img src="../images/flag-slovenia.png" alt="Slovenščina" class="w-6 h-4 mr-3" >
+                            <img src="../images/flag-slovenia.png" alt="Slovenščina" width="80" height="50" class="w-6 h-auto mr-3" >
                             <span class="flex-1">Slovenščina</span>
                         </a>
                     </div>
                 </div>
             </div>
             <!-- Botón de menú móvil -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
+            <button id="mobile-menu-button" type="button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </nav>
@@ -222,6 +230,7 @@
     </div>
 
     <!-- Sección Hero -->
+    <main>
     <section id="home" class="bg-[#003A8C] text-white py-20 md:py-32 text-center rounded-b-lg shadow-xl">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">Soluciones digitales innovadoras para un día a día más inteligente</h1>
@@ -256,49 +265,85 @@
                 <!-- Producto: Conversor de Piloto -->
                 <div class="relative bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex justify-center mb-6">
-                        <img src="../images/pc.jpg" alt="Icono Conversor de Piloto" class="rounded-full border-4 border-gray-200 h-24 w-24 object-contain">
+                        <img
+                            src="../images/pc-96.webp"
+                            srcset="../images/pc-96.webp 96w, ../images/pc-192.webp 192w"
+                            sizes="96px"
+                            width="96"
+                            height="96"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Icono Conversor de Piloto"
+                            class="rounded-full border-4 border-gray-200 h-24 w-24 object-contain">
                     </div>
                     <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Conversor de Piloto</h3>
                     <p class="text-gray-700 text-center mb-6">Su calculadora de vuelo digital en el bolsillo. Realice rápidamente todos los cálculos de vuelo habituales, desde combustible y ascenso hasta tiempo y distancia. Incluye una función única para crear e imprimir reglas de mapa personalizadas y plegables directamente desde su teléfono.</p>
                     <div class="text-center">
                         <a href="https://apps.apple.com/app/pilot-converter-tools/id6757341946?ct=mpktec.se" class="inline-block bg-red-600 text-white font-bold py-2 px-6 rounded-full hover:bg-red-500 transition duration-300 shadow-md">Descargar en App Store</a>
-                        <a href="/en/pilotconverter/" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más</a>
+                        <a href="/en/pilotconverter/" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más sobre Pilot Converter</a>
                     </div>
                 </div>
                 <!-- Producto 1: Simple PDF Scanner -->
                 <div class="relative bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex justify-center mb-6">
-                        <img src="../images/sps.jpg" alt="Icono Simple PDF Scanner" class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
+                        <img
+                            src="../images/sps-96.webp"
+                            srcset="../images/sps-96.webp 96w, ../images/sps-192.webp 192w"
+                            sizes="96px"
+                            width="96"
+                            height="96"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Icono Simple PDF Scanner"
+                            class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
                     </div>
                     <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Simple PDF Scanner</h3>
                     <p class="text-gray-700 text-center mb-6">La aplicación definitiva para escanear documentos a PDF de forma rápida y segura. Con funciones como OCR, protección con contraseña y compartir fácil.</p>
                     <div class="text-center">
                         <a href="https://apps.apple.com/app/simple-pdf-scanner-app/id6751097744?ct=mpktec.se" class="inline-block bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-md">Descargar en App Store</a>
-                        <a href="https://simplepdfscanner.se" target="_blank" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más</a>
+                        <a href="https://simplepdfscanner.se" target="_blank" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más sobre Simple PDF Scanner</a>
                     </div>
                 </div>
                 <!-- Producto 2: Conversor de Coordenadas -->
                 <div class="relative bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex justify-center mb-6">
-                        <img src="../images/ct.jpg" alt="Icono Conversor de Coordenadas" class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
+                        <img
+                            src="../images/ct-96.webp"
+                            srcset="../images/ct-96.webp 96w, ../images/ct-192.webp 192w"
+                            sizes="96px"
+                            width="96"
+                            height="96"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Icono Conversor de Coordenadas"
+                            class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
                     </div>
                     <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Conversor de Coordenadas</h3>
                     <p class="text-gray-700 text-center mb-6">Una aplicación práctica para convertir fácilmente coordenadas entre diferentes formatos. Perfecta para geocaching, navegación o trabajo de campo.</p>
                     <div class="text-center">
-                        <a href="https://apps.apple.com/app/coordtool/id6751749076?ct=mpktec.se" class="inline-block bg-yellow-600 text-white font-bold py-2 px-6 rounded-full hover:bg-yellow-700 transition duration-300 shadow-md">Descargar en App Store</a>
-                        <a href="https://coordtool.se/" target="_blank" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más</a>
+                        <a href="https://apps.apple.com/app/coordtool/id6751749076?ct=mpktec.se" class="inline-block bg-yellow-600 text-gray-900 font-bold py-2 px-6 rounded-full hover:bg-yellow-700 transition duration-300 shadow-md">Descargar en App Store</a>
+                        <a href="https://coordtool.se/" target="_blank" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más sobre Conversor de Coordenadas</a>
                     </div>
                 </div>
                 <!-- Producto 3: Registro de Kilometraje -->
                 <div class="relative bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex justify-center mb-6">
-                        <img src="../images/korj.jpg" alt="Icono Registro de Kilometraje" class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
+                        <img
+                            src="../images/korj-96.webp"
+                            srcset="../images/korj-96.webp 96w, ../images/korj-192.webp 192w"
+                            sizes="96px"
+                            width="96"
+                            height="96"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Icono Registro de Kilometraje"
+                            class="rounded-full border-4 border-blue-200 h-24 w-24 object-contain">
                     </div>
                     <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Registro de Kilometraje</h3>
                     <p class="text-gray-700 text-center mb-6">Optimice su administración de vehículos con nuestra aplicación de registro de conducción, adaptada a las necesidades de asociaciones y pequeñas empresas. Registro e informes sencillos.</p>
                     <div class="text-center">
                         <a href="https://apps.apple.com/app/id6758159503" class="inline-block bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-md">Descargar en App Store</a>
-                        <a href="https://xn--krjournalen-rfb.se" target="_blank" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más</a>
+                        <a href="https://xn--krjournalen-rfb.se" target="_blank" class="block mt-3 text-sm text-blue-600 hover:underline">Leer más sobre Registro de Kilometraje</a>
                     </div>
                 </div>
             </div>
@@ -346,6 +391,7 @@
     </section>
 
     <!-- Sección Footer -->
+    </main>
     <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg shadow-xl">
         <div class="container mx-auto px-4">
             <p class="mb-4">&copy; 2025 MPK Tec AB. Todos los derechos reservados.</p>
@@ -383,15 +429,19 @@
     <!-- JavaScript para menú móvil y selector de idioma -->
     <script>
         // Menú móvil
-        document.getElementById('mobile-menu-button').onclick = function() {
-            var mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.onclick = function() {
             mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
         };
 
         // Cerrar menú móvil al hacer clic en un enlace
         document.querySelectorAll('#mobile-menu a').forEach(item => {
             item.addEventListener('click', () => {
-                document.getElementById('mobile-menu').classList.add('hidden');
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
             });
         });
 
@@ -495,7 +545,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="h-6 w-6 text-green-600">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1-18 0 9 9 0 0 1 18 0Z" />
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg>
             </div>
             <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
